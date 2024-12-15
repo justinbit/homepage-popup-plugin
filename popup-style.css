@@ -1,0 +1,67 @@
+/* Popup Overlay */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+/* Popup Content */
+.popup-content {
+  background-color: #e3decd; /* Warm, soft background */
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 2px solid #bb4426; /* Golden border hint */
+}
+
+/* Close Button */
+.popup-close {
+  color: #888;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.popup-close:hover {
+  color: #333;
+}
+
+/* Popup Heading */
+.popup-content h2 {
+  color: #bb4426; /* Golden color */
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  line-height: 1.3;
+}
+
+/* Popup Paragraph */
+.popup-content p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .popup-content {
+    width: 95%;
+    margin: 15% auto;
+    padding: 20px;
+  }
+}
